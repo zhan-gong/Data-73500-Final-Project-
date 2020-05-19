@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <!-- this is the title that goes in the browser tab name  -->
+    <title>Interactive Data Visualization Tutorial</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Final Project</h1>
+      <h2>CoronaVirus in Hubei Province, China</h2>
+      <h3>Zhan Gong</h3>
+      <h3>Data Feb 23, 2020</h3>
+    </header>
+    <p1>This final project examines the relationship between the original epicenter of coronavirus, Wuhan, and its nearby cities. Wuhan is located in Hubei Province, which is part of the Central China region. Besides Wuhan, there are 16 cities in Hubei. Together, Hubei is home to 60 million population. As of February 23rd, 2020, more than 46,607 COVID-19 cases were confirmed in Wuhan. The Chinese authorities closed off Wuhan on January 23rd; in the following week, other cities in Hubei Province also went into lockdown to control the spread of the virus. Among these cities, it is reasonable to assume that the number of confirmed coronavirus cases in one city may be directly related to its proximity to Wuhan. Cities near Wuhan may have a higher exposure to the virus than cities further away, thus having a higher number of people infected. In this project, I will visualize the association between the geographic distance from each city in Hubei province to Wuhan and its total confirmed cases as of February 23rd.</p>
+    
+  
+    <div id="dashboard">
+      <!-- all we need is an element to select -->
+      <div id="table"> </div>
+      <div id="geo"> </div>
+      <div id="barchart"> </div>
+
+
+
+   </div>
+   <br />
+   <br />
+   <p2>The scatter plot below visualizes the relationship between the geographic distance from each city in Hubei province to Wuhan (X-axis) and its confirmed cases (Y-axis) as of Feb 23rd, 2020.</p2>
+   
+   <div id="scatter"> </div>
+   <p3><br />Note: Wuhan is not included in the scatter plot.</p3>
+    <!-- this is the line that loads in d3 -->
+    <script src="../lib/d3.js"></script>
+    <script src="../lib/d3-array.js"></script>
+    <!-- this is the line that loads in the main js script -->
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
